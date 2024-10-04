@@ -1,7 +1,6 @@
 package com.tnd.prj.algrthm.backtracking;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 /**
  * <pre>
@@ -25,8 +24,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
-        bj_15649 bj_15649 = new bj_15649();
-        bj_15649.submit(input);
+        bj_15649_try1_timeout bj_15649_try1_timeout = new bj_15649_try1_timeout();
+        bj_15649_try1_timeout.submit(input);
     }
 }
 

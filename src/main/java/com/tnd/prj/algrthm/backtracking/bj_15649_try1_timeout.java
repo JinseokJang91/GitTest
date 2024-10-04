@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  * ===============================================
  * </pre>
  */
-public class bj_15649 {
+public class bj_15649_try1_timeout {
     public List<List<Integer>> solution(int n, int m) {
         // # Example
         //   [n=3, m=2]이면 1~3 중에 2개를 골라 생성할 수 있는 수열의 경우의수
