@@ -5,17 +5,17 @@ import java.util.stream.IntStream;
 
 /**
  * <pre>
- * File Description
+ * 15649번 N과 M (1)
  * </pre>
  *
  * @since 2024-10-04
  * <pre>
  * ===============================================
- *
+ * 경우의수를 랜덤뽑기로 했으나 타임아웃 발생
  * ===============================================
  * </pre>
  */
-public class bj_15649_try1_timeout {
+public class BJ_15649_try1_timeout {
     public List<List<Integer>> solution(int n, int m) {
         // # Example
         //   [n=3, m=2]이면 1~3 중에 2개를 골라 생성할 수 있는 수열의 경우의수
@@ -36,7 +36,6 @@ public class bj_15649_try1_timeout {
             int tryCnt = 0;
 
             int maxCase = getPermutation(n, m);
-//            System.out.println("# maxCase = " + maxCase);
 
             while(resultList.size() != maxCase) {
                 List<Integer> tmpList = new ArrayList<>();
@@ -54,8 +53,6 @@ public class bj_15649_try1_timeout {
                 }
 
                 List<Integer> caseList = new ArrayList<>(tmpList);
-//                System.out.println("1. caseList = " + caseList);
-//                System.out.println("2. T/F : " + resultList.contains(caseList));
 
                 if(!resultList.contains(caseList)) {
                     resultList.add(caseList);
@@ -70,14 +67,9 @@ public class bj_15649_try1_timeout {
                 tryCnt++;
             }
 
-//            System.out.println("# tryCnt = " + tryCnt);
-//            System.out.println("# resultList = " + resultList);
-
             int[] indexes = IntStream.range(0, m).toArray(); // {0, ... , m}
 
             sortResultList(resultList, indexes);
-
-//            System.out.println("# sort resultList = " + resultList);
         }
 
         return resultList;

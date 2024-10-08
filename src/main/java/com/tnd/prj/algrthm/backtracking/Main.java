@@ -17,15 +17,17 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         test_bj_15649();
-
     }
 
     private static void test_bj_15649() {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
-        bj_15649_try1_timeout bj_15649_try1_timeout = new bj_15649_try1_timeout();
-        bj_15649_try1_timeout.submit(input);
+//        BJ_15649_try1_timeout bj_15649_try1_timeout = new BJ_15649_try1_timeout();
+//        bj_15649_try1_timeout.submit(input);
+
+        BJ_15649_try2 bj_15649_try2 = new BJ_15649_try2();
+        bj_15649_try2.submit(input);
     }
 }
 
