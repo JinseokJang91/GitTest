@@ -10,54 +10,59 @@ import java.util.Scanner;
  * @since 2024-10-08
  * <pre>
  * ===============================================
- *
+ * 재귀함수 사용
  * ===============================================
  * </pre>
  */
 public class BJ_15651 {
     private static int[] nums;
+    private static final StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
         submit(input);
+
+        sc.close();
     }
 
     private static void submit(String input) {
         String[] inputs = input.split(" ");
-        int N = Integer.parseInt(inputs[0]);
-        int M = Integer.parseInt(inputs[1]);
+        final int N = Integer.parseInt(inputs[0]);
+        final int M = Integer.parseInt(inputs[1]);
 
         solution(N, M);
     }
 
-    private static void solution(int N, int M) {
+    private static void solution(final int N, final int M) {
         if(checkValid(N, M)) {
             nums = new int[M];
 
             backtracking(N, M, 0);
+            System.out.println(sb);
+
         }
     }
 
-    private static void backtracking(int N, int M, int idx) {
-        if(idx == M) {
+    private static void backtracking(final int N, final int M, int depth) {
+        if(depth == M) {
             for(int num : nums) {
-                System.out.print(num + " ");
+                sb.append(num).append(" ");
             }
-            System.out.println();
+            sb.append("\n");
 
             return;
         }
 
         for(int i = 0; i < N; i++) {
-            nums[idx] = i + 1;
+            nums[depth] = i + 1;
 
-            backtracking(N, M, idx + 1);
+            backtracking(N, M, depth + 1);
         }
     }
 
-    private static boolean checkValid(int N, int M) {
+    private static boolean checkValid(final int N, final int M) {
         if((N >= 1 && N <= 7) && (M >= 1 && M <= 7)) {
             return N >= M;
         }
