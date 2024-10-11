@@ -14,10 +14,9 @@ import java.util.*;
  * ===============================================
  * </pre>
  */
-public class BJ_15649_final {
+public class BJ_15649 {
     public static boolean[] isVisited;
     public static int[] nums;
-    public static int count;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -58,7 +57,6 @@ public class BJ_15649_final {
                 isVisited[i] = true;
                 nums[idx] = i + 1;
 
-                count++;
                 backtracking(n, m, idx + 1, cnt + 1);
 
                 isVisited[i] = false;
