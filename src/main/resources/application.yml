@@ -2,4 +2,4 @@ server:
   port: 8092
 
 properties:
-  test : 123
+  test : 456
