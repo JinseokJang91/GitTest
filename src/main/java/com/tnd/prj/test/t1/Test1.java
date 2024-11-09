@@ -6,6 +6,6 @@ public class Test1 {
 
         // this is second test
 
-        // this is third test
+        // this is hotfix third test
     }
 }
