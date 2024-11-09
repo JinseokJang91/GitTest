@@ -2,5 +2,5 @@ server:
   port: 8092
 
 properties:
-  test : 456
+  test : 123
   test2 : 123
