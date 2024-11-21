@@ -5,5 +5,10 @@ public class Test1 {
         // feature/20241121 modified this file.
     	
     	// conflicts will occur
+        // feature/test modified this file.
+    }
+    
+    public void test() {
+    	System.out.println("feature/test modified this file");
     }
 }

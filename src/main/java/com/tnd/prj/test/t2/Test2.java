@@ -5,5 +5,10 @@ public class Test2 {
         // this is hotfix first
 
         // feature/20241121 modified this file.
+    	// feature/test modified this file.
+    }
+    
+    public void test() {
+    	System.out.println("feature/test modified this file");
     }
 }
