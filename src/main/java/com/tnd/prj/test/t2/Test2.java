@@ -7,7 +7,8 @@ public class Test2 {
         // feature/20241121 modified this file.
     	// feature/test modified this file.
     	
-    	// test
+    	String test1 = "test1";
+    	String test2 = "test2";
     }
     
     public void test() {

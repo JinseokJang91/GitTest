@@ -6,6 +6,8 @@ public class Test1 {
     	
     	// conflicts will occur
         // feature/test modified this file.
+    	String test1 = "test1";
+    	String test2 = "test2";
     }
     
     public void test() {
