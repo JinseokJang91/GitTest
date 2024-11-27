@@ -2,10 +2,24 @@ package com.tnd.prj.test.t1;
 
 public class Test1 {
     public static void main(String[] args) {
-        // this is first test
+        // feature/20241121 modified this file.
+    	
+    	// conflicts will occur
+        // feature/test modified this file.
+    	String test1 = "test1";
+    	String test2 = "test2";
+    }
+    
+    public void test() {
+    	System.out.println("feature/test modified this file");
+    	// test1
+    }
 
-        // this is second test
+    public static void test01() {
+        System.out.println("Hello World");
+    }
 
-        // this is hotfix third test
+    public static void test02() {
+        System.out.println("Hello World");
     }
 }
