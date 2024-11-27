@@ -27,4 +27,8 @@ public class Test2 {
     public static void test03() {
         System.out.println("test03 feature/20241127");
     }
+
+    public static void test04() {
+        System.out.println("test04 feature/test");
+    }
 }
