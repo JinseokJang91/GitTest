@@ -15,4 +15,8 @@ public class Test2 {
     public void test() {
     	System.out.println("feature/test modified this file");
     }
+
+    public static void test01() {
+        System.out.println("test01");
+    }
 }
