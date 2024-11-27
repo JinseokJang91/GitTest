@@ -8,4 +8,12 @@ public class Test1 {
 
         // this is hotfix third test
     }
+
+    public static void test01() {
+        System.out.println("Hello World");
+    }
+
+    public static void test02() {
+        System.out.println("Hello World");
+    }
 }
