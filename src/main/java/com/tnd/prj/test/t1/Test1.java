@@ -22,4 +22,8 @@ public class Test1 {
     public static void test02() {
         System.out.println("Hello World");
     }
+
+    public static void test03() {
+        System.out.println("Hello World");
+    }
 }
