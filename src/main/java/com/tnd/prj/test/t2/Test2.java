@@ -6,4 +6,8 @@ public class Test2 {
 
         // this is hotfix second
     }
+
+    public static void test01() {
+        System.out.println("test01");
+    }
 }
