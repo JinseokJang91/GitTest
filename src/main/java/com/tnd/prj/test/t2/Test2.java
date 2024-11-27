@@ -19,4 +19,8 @@ public class Test2 {
     public static void test01() {
         System.out.println("test01");
     }
+
+    public static void test02() {
+        System.out.println("test02");
+    }
 }
