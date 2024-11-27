@@ -14,4 +14,12 @@ public class Test1 {
     	System.out.println("feature/test modified this file");
     	// test1
     }
+
+    public static void test01() {
+        System.out.println("Hello World");
+    }
+
+    public static void test02() {
+        System.out.println("Hello World");
+    }
 }
