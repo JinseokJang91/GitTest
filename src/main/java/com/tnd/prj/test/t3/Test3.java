@@ -1,7 +1,5 @@
 package com.tnd.prj.test.t3;
 
 public class Test3 {
-	public static void main(String[] args) {
-		String test3 = "test3";
-	}
+	private String test1; // feature/test added this field;
 }
